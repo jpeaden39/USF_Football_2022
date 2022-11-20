@@ -55,3 +55,5 @@ SELECT AVG(o_total_yards), AVG(o_pass_yards), AVG(o_rush_yards) from usf_offense
 
 SELECT SUM(o_total_yards), SUM(o_pass_yards), SUM(o_rush_yards) from usf_offense_stats_fact
 
+/* After week 9 usf had a coaching change, compare the total offensive and defensive yards before and after the coaching change.*/
+
