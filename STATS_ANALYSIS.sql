@@ -21,7 +21,7 @@ WHERE result_f = 'L'
 GROUP BY
 result_f
 
-/*3. Show the number of wins and loses by location **Hard** (Use GROUP BY/ HAVING)*/
+/*3. Show the number of wins and loses by location */
 
 (SELECT location,
 (SELECT COUNT(*) FROM usf_schedule WHERE location = 'Home' AND result_f = 'W') AS Wins,
@@ -55,5 +55,14 @@ SELECT AVG(o_total_yards), AVG(o_pass_yards), AVG(o_rush_yards) from usf_offense
 
 SELECT SUM(o_total_yards), SUM(o_pass_yards), SUM(o_rush_yards) from usf_offense_stats_fact
 
-/* After week 9 usf had a coaching change, compare the total offensive and defensive yards before and after the coaching change.*/
+/* 9.After week 9 usf had a coaching change, compare the total offensive and defensive yards before and after the coaching change.*/
 
+SELECT  AVG(o_total_yards) offense,   AVG(d_tot_yards)defense,  "coach_scott" AS coach    FROM usf_offense_stats_fact 
+JOIN usf_defense_stats_facts_stats 
+ON usf_offense_stats_fact.week_id= usf_defense_stats_facts_stats.week_id
+WHERE usf_offense_stats_fact.week_id <=9
+UNION
+SELECT AVG(o_total_yards) offense, AVG(d_tot_yards) defense, "coach_prato" FROM usf_offense_stats_fact
+JOIN usf_defense_stats_facts_stats
+ON usf_offense_stats_fact.week_id=usf_defense_stats_facts_stats.week_id
+WHERE usf_offense_stats_fact.week_id >=9
