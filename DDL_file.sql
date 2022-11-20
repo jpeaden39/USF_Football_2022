@@ -12,7 +12,7 @@ ALTER TABLE usf_schedule CHANGE `game_dt` `game_dt` INTEGER(4) COMMENT 'Date of 
 ALTER TABLE usf_schedule CHANGE `opponent` `opponent` INTEGER(4) COMMENT 'Name of the school USF is playing';
 ALTER TABLE usf_schedule CHANGE `location` `location` INTEGER(4) COMMENT 'Home, Away, Neutral, or Bye';	
 ALTER TABLE usf_schedule CHANGE `result_f` `result_f` INTEGER(4) COMMENT 'W(in) or L(ose)';
-UPDATE usf_schedule SET result_f = 'L' WHERE week_id = 10;
+
 
 
 
