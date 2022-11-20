@@ -1,1 +1,2 @@
 Add the reason for doing this project, what technologies you used (MySQL), what you were looking to get out of this, and how you get the data.
+The reason I created this project was to start to use SQL hands on, while also being able to analyze one of my favorite football teams. I am an Alumn from USF and I thought this would be a great first project to create while continuing to learn in MySQL. This project is compiled of all the offensive stats and offensive stats of usf's opponets.
