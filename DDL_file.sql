@@ -1,3 +1,7 @@
+*/ This table was creatd to show the schedule of the usf football team for the 2022 season.
+The table consisted of the week, the date of the game, the opponet usf played, if the game was home or away,
+and whether or not the result was a win or loss. I used "ALTER TABLE" below to write comments for the database these were used throughout all three tables./*
+
 CREATE TABLE usf_schedule
 (
 week_id INTEGER (4) , 
@@ -15,6 +19,9 @@ ALTER TABLE usf_schedule CHANGE `result_f` `result_f` INTEGER(4) COMMENT 'W(in) 
 
 
 
+
+*/ This table consists of various usf offensive stats such as passing, rushing and turnovers. Each column allows for a four digit integer to be inputted.
+The foreign key which is the week_id column refers to the week_id in the usf_schedule.
 
 
 CREATE TABLE usf_offense_stats_fact
@@ -37,6 +44,9 @@ ALTER TABLE usf_offense_stats_fact CHANGE `o_pass_att` `o_pass_att` INTEGER(4) C
 ALTER TABLE usf_offense_stats_fact CHANGE `o_rush_yards` `o_rush_yards` INTEGER(4) COMMENT 'USF total rush yards gained for the game';
 ALTER TABLE usf_offense_stats_fact CHANGE `o_rush_att ` `o_rush_att ` INTEGER(4) COMMENT 'USF total rush attempts for the game';
 ALTER TABLE usf_offense_stats_fact CHANGE `o_turnovers` `o_turnovers` INTEGER(4) COMMENT 'USF total turnovers given up for the game';
+
+This is the usf defensive stats table. This table looks at the same stats as the offensive table but for the team usf played.
+The foreign key was the same as the offensive table(week_id).
 
 CREATE TABLE usf_defense_stats_facts_stats
 (
