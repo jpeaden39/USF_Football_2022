@@ -1,3 +1,6 @@
+*/ Here I inserted the data for the usf schedule. What is being inserted is referenced in the ALTER TABLE comments. 
+I used the data loads INSERT INTO and VALUES to input the data for each week/*
+
 INSERT INTO usf_schedule(week_id,game_dt,opponet,location,result_f)
 VALUES ('1', '2022-09-03','Brigham Young','Home','L');
 INSERT INTO usf_schedule(week_id,game_dt,opponet,location,result_f)
@@ -23,7 +26,9 @@ VALUES('11', '2022-11-18','Tulsa','Away',Null);
 INSERT INTO usf_schedule(week_id,game_dt,opponet,location,result_f)
 VALUES('12','2022-11-26','Central Florida','Home',Null);
 UPDATE usf_schedule SET result_f = 'L' WHERE week_id = 10; /* Updating because game occured after creation of the table*/
-
+UPDATE usf_schedule SET result_f = 'L' WHERE week_id = 11; 
+ 
+ */ Here I used the same data loads to insert stats for the usf offensive stats. 
  
  INSERT INTO usf_offense_stats_fact(week_id,o_total_yards,o_pass_yards,o_pass_att,o_pass_comp,o_rush_yards,o_rush_att,o_turnovers)
  VALUES('1','279','172','30','17','107','27','1');
@@ -45,6 +50,10 @@ UPDATE usf_schedule SET result_f = 'L' WHERE week_id = 10; /* Updating because g
   VALUES('9', '471','190','27','14','281','43','3');
 INSERT INTO usf_offense_stats_fact(week_id,o_total_yards,o_pass_yards,o_pass_att,o_pass_comp,o_rush_yards,o_rush_att,o_turnovers)
 VALUES('10', '381','202','34','14','179','42','1');
+INSERT INTO  usf_offense_stats_fact(week_id,o_total_yards,o_pass_yards,o_pass_att,o_pass_comp,o_rush_yards,o_rush_att,o_turnovers)
+VALUES ('11', '499','240','25','21','259','41','2');
+
+ */ Here I used the same data loads to insert stats for the usf offensive stats/*.
 
 INSERT INTO usf_defense_stats_facts_stats(week_id,d_tot_yards,d_pass_yards,d_pass_att,d_pass_comp,d_rush_yards,d_rush_att,d_turnover)
 VALUES('1','573','261','32','25','312','37','1');
@@ -64,3 +73,8 @@ INSERT INTO usf_defense_stats_facts_stats(week_id,d_tot_yards,d_pass_yards,d_pas
 VALUES('8','490','387','39','33','103','25','1');
 INSERT INTO usf_defense_stats_facts_stats(week_id,d_tot_yards,d_pass_yards,d_pass_att,d_pass_comp,d_rush_yards,d_rush_att,d_turnover)
 VALUES('9', '621','344','36','27','277','30','0');
+INSERT INTO usf_defense_stats_facts_stats(week_id,d_tot_yards,d_pass_yards,d_pass_att,d_pass_comp,d_rush_yards,d_rush_att,d_turnover)
+VALUES('10', '553','280','27','19','273','41','0');
+INSERT INTO usf_defense_stats_facts_stats(week_id,d_tot_yards,d_pass_yards,d_pass_att,d_pass_comp,d_rush_yards,d_rush_att,d_turnover)
+VALUES('11','573','302','27','20','271','46','0');
+
