@@ -45,8 +45,8 @@ ALTER TABLE usf_offense_stats_fact CHANGE `o_rush_yards` `o_rush_yards` INTEGER(
 ALTER TABLE usf_offense_stats_fact CHANGE `o_rush_att ` `o_rush_att ` INTEGER(4) COMMENT 'USF total rush attempts for the game';
 ALTER TABLE usf_offense_stats_fact CHANGE `o_turnovers` `o_turnovers` INTEGER(4) COMMENT 'USF total turnovers given up for the game';
 
-This is the usf defensive stats table. This table looks at the same stats as the offensive table but for the team usf played.
-The foreign key was the same as the offensive table(week_id).
+/*This is the usf defensive stats table. This table looks at the same stats as the offensive table but for the team usf played.
+The foreign key was the same as the offensive table(week_id).*/
 
 CREATE TABLE usf_defense_stats_facts_stats
 (
