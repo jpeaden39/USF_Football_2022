@@ -53,7 +53,7 @@ VALUES('10', '381','202','34','14','179','42','1');
 INSERT INTO  usf_offense_stats_fact(week_id,o_total_yards,o_pass_yards,o_pass_att,o_pass_comp,o_rush_yards,o_rush_att,o_turnovers)
 VALUES ('11', '499','240','25','21','259','41','2');
 
- */ Here I used the same data loads to insert stats for the usf offensive stats/*.
+ */ Here I used the same data loads to insert stats for the usf defensive stats/*.
 
 INSERT INTO usf_defense_stats_facts_stats(week_id,d_tot_yards,d_pass_yards,d_pass_att,d_pass_comp,d_rush_yards,d_rush_att,d_turnover)
 VALUES('1','573','261','32','25','312','37','1');
