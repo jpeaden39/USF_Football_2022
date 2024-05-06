@@ -1,4 +1,4 @@
-*/ This table was creatd to show the schedule of the usf football team for the 2022 season.
+*/ This table was created to show the schedule of the usf football team for the 2022 season.
 The table consisted of the week, the date of the game, the opponet usf played, if the game was home or away,
 and whether or not the result was a win or loss. I used "ALTER TABLE" below to write comments for the database these were used throughout all three tables./*
 
